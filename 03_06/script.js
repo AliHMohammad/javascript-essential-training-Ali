@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 /**
  * Create a Backpack object.
  */
@@ -22,3 +24,10 @@ const backpack = {
 };
 
 console.log("The backpack object:", backpack);
+console.log("The pocketNum value:", backpack.pocketNum);
+console.log("The backpack straplength left:", backpack.strapLength.left);
+
+
+const query = "pocketNum";
+
+console.log("The pocketNum value:", backpack[query]);

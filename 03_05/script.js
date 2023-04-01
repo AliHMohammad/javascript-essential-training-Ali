@@ -20,3 +20,11 @@ const backpack = {
     this.strapLength.right = lengthRight;
   },
 };
+
+
+console.log("backpack", backpack);
+// backpack {name: 'Everyday Backpack', volume: 30, color: 'grey', pocketNum: 15, strapLength: {…},
+console.log(`backpack ${backpack}`);
+// backpack [object Object]
+
+

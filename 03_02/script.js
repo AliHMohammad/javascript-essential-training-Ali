@@ -2,6 +2,7 @@
  * Create a Backpack object.
  */
 
+
 const backpack = {
   name: "Everyday Backpack",
   volume: 30,
