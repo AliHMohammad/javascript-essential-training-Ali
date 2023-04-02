@@ -16,15 +16,15 @@ const backpack = {
     left: 26,
     right: 26,
   },
+  newName: function (name) {
+    this.name = name;
+  },
   toggleLid: function (lidStatus) {
     this.lidOpen = lidStatus;
   },
   newStrapLength: function (lengthLeft, lengthRight) {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
-  },
-  newName: function (name) {
-    this.name = name;
   },
   newVolume: function (volume) {
     this.volume = volume;
@@ -38,8 +38,9 @@ const backpack = {
 };
 
 console.log(backpack.name);
-console.log(backpack.newName("Millitary Backpack"));
+backpack.newName("Millitary Backpack")
 console.log(backpack.name);
+
 console.log(backpack.volume);
-console.log(backpack.newVolume(100));
+backpack.newVolume(100)
 console.log(backpack.volume);

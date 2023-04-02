@@ -50,4 +50,20 @@ const content = `
 
 const main = document.querySelector(".maincontent");
 
-main.innerHTML = content;
+main.insertAdjacentHTML("beforeend", content)
+
+
+
+const outputNav = /*html*/ `
+	<nav>
+		<ul class="grid-container">
+			<li><a href="#intro-text">Intro</a></li>
+			<li><a href="#everyday">Backpack</a></li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+	</nav>
+`;
+
+document.querySelector("header").insertAdjacentHTML("beforeend", outputNav)

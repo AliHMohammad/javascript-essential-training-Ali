@@ -6,6 +6,7 @@
  */
 
 import Backpack from "./Backpack.js";
+import Book from "./Book.js";
 
 const everydayPack = new Backpack(
   "Everyday Backpack",
@@ -21,3 +22,35 @@ const everydayPack = new Backpack(
 console.log("The everydayPack object:", everydayPack);
 console.log("The pocketNum value:", everydayPack.pocketNum);
 console.log("Days since aquired:", everydayPack.backpackAge());
+
+const communistManifesto = new Book(
+  "The Communist Manifesto",
+  "Karl Marx & Frederich Engels",
+  "1848",
+  "Ali",
+  false
+)
+
+console.log(communistManifesto);
+
+const stateAndRevolution = new Book(
+  "The State and Revolution",
+  "Vladimir Lenin",
+  "1918",
+  "Ali",
+  false
+)
+
+console.log(stateAndRevolution);
+
+const antiDuhring = new Book(
+  "Anti-Duhring",
+  "Frederich Engels",
+  "1878",
+  "Ali",
+  true
+)
+
+console.log(antiDuhring);
+
+antiDuhring.newOwnership("Berfin")

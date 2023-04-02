@@ -8,4 +8,31 @@
  * - Remove the item you found using the find method from the array.
  */
 
+let arr = ["Rubberduck", "Monitor", "Vitamins", "Waterjug"];
+console.log(arr);
 
+const lastItem = arr.pop();
+
+
+arr.unshift(lastItem);
+console.log(arr);
+
+arr = arr.sort(function (a, b) {
+    return a.localeCompare(b);
+})
+
+console.log(arr);
+
+
+
+let item = arr.find(function (item) {
+  if (item == "Rubberduck") {
+    return item;
+  }
+});
+
+console.log(item);
+
+arr.splice(arr.indexOf(item), 1);
+
+console.log(arr);

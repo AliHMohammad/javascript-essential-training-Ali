@@ -38,3 +38,17 @@ class Backpack {
 }
 
 export default Backpack;
+
+
+class Hello {
+  constructor(
+    name,
+    age
+  ) {
+    this.name = name;
+    this.age = age;
+  }
+  hejsa() {
+    console.log("halløjsa");
+  }
+}

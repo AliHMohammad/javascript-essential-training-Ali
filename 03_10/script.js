@@ -16,3 +16,15 @@ const everydayPack = new Backpack(
 
 console.log("The everydayPack object:", everydayPack);
 console.log("The pocketNum value:", everydayPack.pocketNum);
+
+
+const millitaryPack = new Backpack(
+  "Ali Backpack",
+  30,
+  "Black",
+  15,
+  26,
+  26,
+  true
+);
+
