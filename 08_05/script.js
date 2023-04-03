@@ -6,20 +6,26 @@
 
 // Define a default volume for the window (the entire DOM):
 window.volume = 20;
+"use strict"
 
 const greenPack = {
   name: "Frog Pack",
   color: "green",
   volume: 8,
   pocketNum: 3,
+  //method
   newVolume: function (volume) {
     console.log("this.volume in the method:", this.volume);
     this.volume = volume;
     console.log("this.volume after update:", this.volume);
-    // (function () {
-    //   console.log("this.volume in nested function:", this.volume);
-    // })();
+    //Function inde i method. Skal laves som annonymous arrow function.
+    (() => {
+      console.log("this.volume in nested function:", this.volume);
+    })();
   },
 };
+greenPack.newVolume(5);
+//this.volume in the method: 8
+//this.volume after update: 5
+//this.volume in nested function: 5
 
-console.log(greenPack.newVolume(5));

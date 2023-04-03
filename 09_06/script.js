@@ -38,7 +38,7 @@ const backpackList = backpackObjectArray.map((backpack) => {
   backpackArticle.classList.add("backpack");
   backpackArticle.setAttribute("id", backpack.id);
 
-  backpackArticle.innerHTML = `
+  backpackArticle.innerHTML = /*html*/`
     <figure class="backpack__image">
       <img src=${backpack.image} alt="" loading="lazy" />
     </figure>

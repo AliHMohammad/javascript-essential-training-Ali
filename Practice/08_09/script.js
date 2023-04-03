@@ -13,6 +13,8 @@
  *  - Returns <figure> element to where function is called
  */
 
+// const { doc } = require("prettier");
+
 const frogpack = {
   name: "Frog Backpack",
   volume: 8,
@@ -32,6 +34,24 @@ const frogpack = {
     this.strapLength.right = lengthRight;
   },
 };
+
+function main(input, caption, src) {
+  let element = document.createElement("article");
+  element.insertAdjacentHTML("beforeend", input)
+  element.insertAdjacentHTML("beforeend", helper(caption, src))
+  console.log(element);
+  return element
+}
+
+function helper(caption, src) {
+  const html = /*html*/ `
+  <figure>
+    <img src=${src}>
+    <figcaption>${caption}</figcaption>
+  </figure>
+  `;
+  return html
+}
 
 // Baseline HTML output
 const content = `
@@ -57,3 +77,6 @@ const content = `
       }</span></li>
     </ul>  
 `;
+
+let gem = main(content, "froggie", "/assets/images/frog.svg");
+document.querySelector("main").appendChild(gem);
